@@ -10,14 +10,14 @@ async function getQuestionById( req, res) {
 
     catch (error){
         console.log(error);
-        res.status(500).send(error);s
+        res.status(500).send(error);
     }
 };
 
 async function createQuestion (req, res) {
     try{
-        const {question} = req.params;
-        const newQuestion = await QuestionModel.createQuestion(question);
+        const {pregunta} = req.body;
+        const newQuestion = await questionModel.createQuestion(pregunta);
         res.status(201).json(newQuestion);
     } 
     catch (error){

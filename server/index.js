@@ -8,6 +8,8 @@ const port = 3000;
 // routes
 
 const questionRoutes = require("./routes/questionRoutes");
+const referenceRoutes = require('./routes/referenceRoutes');
+const scoreRoutes = require('./routes/scoreRoutes');
 
 // express functions
 app.use(cors());
@@ -27,5 +29,7 @@ app.listen(port, () => {
 
 // endpoints
 app.use("/question", questionRoutes);
+app.use('/reference', referenceRoutes);
+app.use('/score', scoreRoutes);
 
             
