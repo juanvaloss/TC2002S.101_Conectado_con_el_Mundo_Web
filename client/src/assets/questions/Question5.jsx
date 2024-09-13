@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router"
 import { useEffect, useState } from 'react'
-import { aumentarCont, printCont, returnCont } from '../Cont'
+import { aumentarCont, printCont} from '../Cont'
 
 
 

@@ -11,3 +11,7 @@ export function printCont () {
 export function returnCont () {
     return cont;
 };
+
+export function resetCont () {
+    cont = 0;
+}

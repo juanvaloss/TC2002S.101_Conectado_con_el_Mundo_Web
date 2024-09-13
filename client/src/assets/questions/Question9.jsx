@@ -1,22 +1,22 @@
 import { useNavigate } from "react-router"
 import { useEffect, useState } from 'react'
-import { aumentarCont, printCont} from '../Cont'
+import { aumentarCont, printCont } from '../Cont'
 
 
 
-const Question7 = () => {
+const Question9 = () => {
 
     const navigate = useNavigate();
 
     
     const goNextQuestion = () => {
-        navigate('/question8');
+        navigate('/question10');
         printCont()
     }
 
     const correctAnswer = () => {
         printCont()
-        navigate('/question8');
+        navigate('/question10');
         aumentarCont();
         printCont()
     }
@@ -26,7 +26,7 @@ const Question7 = () => {
 
 
     const fetchQuestion = async () => {
-        const response = await fetch ("http://localhost:3000/question/7");
+        const response = await fetch ("http://localhost:3000/question/9");
         const data = await response.json();
         setPregunta(data[0].pregunta);
     };
@@ -48,11 +48,11 @@ const Question7 = () => {
 
             <div className="flex flex-row">
                 <button onClick={goNextQuestion} className="flex justify-center h-[70px] w-[300px] bg-[#76ABA1] rounded-xl items-center text-white mt-[100px] font-medium font-style: italic text-xl mr-[120px]">
-                    Verdadero
+                    Si
                 </button>
 
                 <button onClick={correctAnswer} className="flex justify-center h-[70px] w-[300px] bg-[#76ABA1] rounded-xl items-center text-white mt-[100px] font-medium font-style: italic text-xl">
-                    Falso
+                    No
                 </button>
             </div>
                 
@@ -60,4 +60,4 @@ const Question7 = () => {
     )
 };
 
-export default Question7;
+export default Question9;

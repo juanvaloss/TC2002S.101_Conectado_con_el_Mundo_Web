@@ -7,6 +7,10 @@ import Question5 from './assets/questions/Question5';
 import Question6 from './assets/questions/Question6';
 import Question7 from './assets/questions/Question7';
 import Question8 from './assets/questions/Question8';
+import Question9 from './assets/questions/Question9';
+import Question10 from './assets/questions/Question10';
+import Results from './assets/Results';
+import Home from './assets/Home';
 
 function App() {
 
@@ -21,6 +25,10 @@ function App() {
       <Route path="/question6" element={<Question6/>} />
       <Route path="/question7" element={<Question7/>} />
       <Route path="/question8" element={<Question8/>} />
+      <Route path="/question9" element={<Question9/>} />
+      <Route path="/question10" element={<Question10/>} />
+      <Route path ='/results' element = {<Results/>} />
+      <Route path ='/home' element = {<Home/>} />
 
     </Routes>
   );

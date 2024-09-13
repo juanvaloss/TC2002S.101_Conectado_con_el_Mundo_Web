@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router"
 import { useEffect, useState } from 'react'
-import { aumentarCont, printCont, returnCont } from '../Cont'
+import { aumentarCont, printCont} from '../Cont'
 
 
 
-const Question7 = () => {
+const Question8 = () => {
 
     const navigate = useNavigate();
 
@@ -60,4 +60,4 @@ const Question7 = () => {
     )
 };
 
-export default Question7;
+export default Question8;
