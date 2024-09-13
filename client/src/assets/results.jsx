@@ -13,7 +13,7 @@ const Results = () => {
 
     const exitSurvey = () => {
         submitScore();
-        navigate('/home');
+        navigate('/');
         printCont()
     }
 
