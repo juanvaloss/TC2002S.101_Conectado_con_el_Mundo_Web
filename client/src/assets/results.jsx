@@ -90,7 +90,7 @@ const Results = () => {
 
             <div className="flex flex flex-col justify-center h-[350px] w-[600px] bg-[#76ABA1] rounded-xl items-center text-white px-3 font-medium font-style: italic text-base text-center mt-5 mb-5">
                 <div className=" py-3 mt-1 mb-5">
-                    Si quieres mejorar tu score y más conciente acerca del racismo en México, puedes visitar las siguientes referencias:
+                    Si quieres mejorar tu score y ser más conciente acerca del racismo en México, puedes visitar las siguientes referencias:
                 </div>
                 <div className="text-center flex flex-col h-[200px] w-[500px] bg-[#458088] overflow-y-auto rounded-xl flex justify-center items-center font-medium font-style: italic text-xs text-">
                     <div className="mt-[0px] px-2 text-[#458088]">
